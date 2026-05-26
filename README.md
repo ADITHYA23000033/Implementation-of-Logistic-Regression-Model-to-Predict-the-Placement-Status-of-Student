@@ -8,21 +8,18 @@ To write a program to implement the the Logistic Regression Model to Predict the
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Start
-2. Import the required packages and print the present data.
-3. Print the placement data and salary data.
-4. Find the null and duplicate values.
-5. Using logistic regression find the predicted values of accuracy , confusion matrices.
-6. Display the results.
-7. End 
+1. Import the required libraries, load the Placement dataset using Pandas, remove unnecessary columns (sl_no and salary), and check for null or duplicate values.
+2. Convert all categorical columns into numerical values using LabelEncoder, then separate the dataset into input features (x) and target output (y).
+3. Split the dataset into training and testing sets using train_test_split, create the LogisticRegression model, and train it using the training data.
+4. Predict the test results, calculate evaluation metrics such as accuracy score, confusion matrix, and classification report, then display the confusion matrix graphically using ConfusionMatrixDisplay.
 
 ## Program:
 ```
-
 Program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
 Developed by: ADITHYA V
-RegisterNumber:212223110001
-
+RegisterNumber:  212223110001
+```
+```
 import pandas as pd
 data=pd.read_csv("Placement_Data.csv")
 data.head()
@@ -66,8 +63,8 @@ cm_display.plot()
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/8ecfc6be-48e8-439d-a353-b71fb292024a)
-![image](https://github.com/user-attachments/assets/69f62c35-2002-4d88-b570-45855a8784d7)
+<img width="785" height="326" alt="image" src="https://github.com/user-attachments/assets/88bdfa96-17fa-4054-ae6d-01de779fdd2d" />
+<img width="843" height="577" alt="image" src="https://github.com/user-attachments/assets/ae8f6cbf-a520-4232-bf3e-e6fd5283e5ff" />
 
 
 
